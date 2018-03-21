@@ -587,9 +587,11 @@ phpinfo();
 
 进入php和nginx容器查看是如何通信的 
 php 
+
 ![这里写图片描述](http://img-blog.csdn.net/20180321165958211?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L2d1eWFuMDMxOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 nginx 
+
 ![这里写图片描述](http://img-blog.csdn.net/20180321170605567?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L2d1eWFuMDMxOQ==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 本文配置文件放在github： <https://github.com/guyan0319/docker_lnmp>
