@@ -8,7 +8,7 @@
 1、创建目录/var/docker/
 
 ```
-mkdir -p /var/docker1
+mkdir -p /var/docker
 ```
 
 从 [github](https://github.com/guyan0319/docker_lnmp) 拉取相关配置文件 ，将nginx文件夹复制到/var/docker/下。 
@@ -294,7 +294,7 @@ files = supervisord.d/*.ini
 
 ```
 [program:nginx]
-command=/usr/sbin/nginx -g 'daemon off;'12
+command=/usr/sbin/nginx -g 'daemon off;'
 ```
 
 而对于nginx来说： 
@@ -327,7 +327,7 @@ server {
 在 /var/docker/nginx 下执行
 
 ```
-docker build -t php .1
+docker build -t nginx .
 ```
 
 二、构建 php7.2 
@@ -545,7 +545,7 @@ command=/usr/sbin/php-fpm
 2、构建php7.2
 
 ```
-docker build -t nginx .1
+docker build -t php .
 ```
 
 三、查看生成的镜像
