@@ -557,13 +557,13 @@ docker build -t php .
 
 ```
 docker run -d --name=php   -v /var/www:/var/www php
-12
+
 ```
 
 记住加 -v /var/www:/var/www 即把宿主主机目录/var/www 映射到容器 /var/www ，如果不设置会出现 file not found的错误
 
 ```
-docker run -d --name=nginx -p80:80 -v /var/www:/var/www --link=php:php nginx 1
+docker run -d --name=nginx -p80:80 -v /var/www:/var/www --link=php:php nginx 
 ```
 
 这里 –link=php:php 实现了nginx和php容器的互通
@@ -579,7 +579,7 @@ docker run -d --name=nginx -p80:80 -v /var/www:/var/www --link=php:php nginx 1
 ```
 <?php
 phpinfo();
-123
+
 ```
 
 访问 <http://www.gzqiang.cn/index.php> 
